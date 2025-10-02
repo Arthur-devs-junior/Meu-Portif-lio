@@ -1,0 +1,97 @@
+/* ====== MENU HAMBURGUER ====== */
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 2rem;
+    cursor: pointer;
+    margin-left: auto;
+}
+
+/* ====== RESPONSIVIDADE ====== */
+@media (max-width: 800px) {
+    .menu {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1rem 1.5rem;
+        width: 100vw;
+        box-sizing: border-box;
+        position: relative;
+        z-index: 10;
+    }
+    .menu .titulo {
+        width: auto;
+        text-align: center;
+        margin-bottom: 0;
+        flex: 1;
+    }
+    .menu-toggle {
+        display: block;
+        margin-left: 0.5rem;
+        z-index: 20;
+    }
+    .nav-bar {
+        width: 100vw;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background: var(--azul-escuro);
+        box-shadow: 0 4px 16px rgba(26,35,126,0.12);
+        display: none;
+        transition: max-height 0.3s;
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;
+    }
+    .nav-bar.active {
+        display: block;
+        animation: fadeInMenu 0.25s;
+    }
+    @keyframes fadeInMenu {
+        from { opacity: 0; transform: translateY(-10px);}
+        to   { opacity: 1; transform: translateY(0);}
+    }
+    .nav-bar ul {
+        flex-direction: column;
+        gap: 0.5rem;
+        width: 100%;
+        padding: 1rem 0;
+    }
+    .nav-bar ul li {
+        width: 100%;
+        text-align: left;
+        padding: 0.7rem 1.5rem;
+        border-bottom: 1px solid rgba(255,255,255,0.07);
+    }
+    .nav-bar ul li:last-child {
+        border-bottom: none;
+    }
+    body {
+        overflow-x: hidden;
+    }
+    #home {
+        margin: 1rem 0.5rem;
+        padding: 1rem 0.5rem;
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
+
+@media (max-width: 600px) {
+    #home {
+        margin: 0.5rem 0.2rem;
+        padding: 0.7rem 0.2rem;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    #home-description h2 {
+        font-size: 1.2rem;
+    }
+    #home-description p {
+        font-size: 1rem;
+    }
+    body {
+        overflow-x: hidden;
+    }
+}

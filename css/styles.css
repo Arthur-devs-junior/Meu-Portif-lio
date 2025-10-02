@@ -1,0 +1,162 @@
+/* ====== VARIÁVEIS DE CORES ====== */
+:root {
+    --azul-escuro: #1a237e;
+    --laranja: #ff9800;
+    --cinza-claro: #f5f7fa;
+    --cinza-escuro: #4f4f4f;
+    --preto: #222222;
+    --azul-hover: #283593;
+}
+
+/* ====== RESET E BASE ====== */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background: var(--cinza-claro);
+    color: var(--preto);
+    line-height: 1.6;
+}
+
+a{
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+ul{
+    list-style: none;
+}
+
+/* ====== MENU PRINCIPAL ====== */
+.menu{
+    background: var(--azul-escuro);
+    color: #fff;
+    padding: 1rem 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 8px rgba(26,35,126,0.08);
+}
+
+.menu .titulo{
+    font-size: 2.5rem;
+    color: var(--laranja);
+    letter-spacing: 2px;
+}
+
+.menu .nav-bar ul{
+    display: flex;
+    gap: 1rem;
+}
+
+.menu .nav-bar ul li{
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background 0.2s, color 0.2s;
+}
+
+.menu .nav-bar ul li a {
+    color: #fff;
+    transition: color 0.3s;
+}
+
+.menu .nav-bar ul li a:hover {
+    color: var(--laranja);
+}
+
+.menu .nav-bar ul li:hover{
+    background: var(--azul-hover);
+    text-decoration: underline;
+}
+
+/* ====== CONTEÚDO PRINCIPAL ====== */
+#home{
+    padding: 1.5rem;
+    text-align: center;
+    background: #fff;
+    margin: 1.5rem auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(26,35,126,0.08);
+}
+
+#home-description h2 {
+    color: var(--azul-escuro);
+    margin-bottom: 1rem;
+}
+
+#home-description p {
+    color: var(--cinza-escuro);
+    font-size: 1.3rem;
+}
+
+/* ====== CERTIFICADOS ====== */
+.certificado-thumb img {
+    max-width: 220px;
+    max-height: 140px;
+    border-radius: 6px;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(26,35,126,0.08);
+    transition: transform 0.2s;
+    object-fit: cover;
+    background: #fff;
+}
+.certificado-thumb img:hover {
+    transform: scale(1.05);
+}
+
+/* ====== MODAL DE CERTIFICADOS ====== */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    padding-top: 60px;
+    left: 0; top: 0;
+    width: 100%; height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.9);
+}
+.modal-content {
+    margin: auto;
+    display: block;
+    max-width: 90vw;
+    max-height: 80vh;
+    border-radius: 8px;
+    background: #fff;
+}
+.close {
+    position: absolute;
+    top: 30px;
+    right: 40px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+.close:hover {
+    color: var(--laranja);
+}
+
+.contaclink{
+    color: var(--azul-escuro);
+}
+
+.contaclink:hover{
+    color: var(--laranja);
+}
+
+.foto{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-top: 1rem;
+    box-shadow: 0 2px 8px rgba(26,35,126,0.08);
+}
