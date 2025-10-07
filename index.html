@@ -7,8 +7,7 @@
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="./css/responsive.css">
     <link rel="icon" href="./img/logo.png.png" type="image/png">
-    
-    <title>Portifolio</title>
+    <title>Portfólio</title>
 </head>
 <body>
     <!-- ====== Cabeçalho e Navegação ====== -->
@@ -17,23 +16,71 @@
         <button class="menu-toggle" aria-label="Abrir menu">&#9776;</button>
         <nav class="nav-bar">
             <ul>
-                <li class="option"><a href="./index.html">Inicio</a></li>
-                <li class="option"><a href="./sobre.html">Sobre</a></li>
-                <li class="option"><a href="./linguagens.html">Linguagens</a></li>
-                <li class="option"><a href="./certificados.html">Certificados</a></li>
-                <li class="option"><a href="./contatos.html">Contate-me</a></li>
+                <li class="option"><a href="#inicio">Início</a></li>
+                <li class="option"><a href="#sobre">Sobre</a></li>
+                <li class="option"><a href="#linguagens">Linguagens</a></li>
+                <li class="option"><a href="#certificados">Certificados</a></li>
+                <li class="option"><a href="#contato">Contate-me</a></li>
             </ul>
         </nav>
     </header>
 
     <!-- ====== Conteúdo Principal ====== -->
     <main id="home">
-        <section id="home-description">
-            <h2>Eu Sou O Arthur</h2>
-            <img src="./img/Arthur.jpg" alt="Foto Minha" class="foto">
-            <br><br>
-            <p>Eu sou um jovem que está atualmente estudando programação.</p>
-            
+        <!-- Início -->
+        <section id="inicio" class="home-section">
+            <h2>Bem-vindo ao meu portfólio!</h2>
+            <img src="./img/Arthur.jpg" alt="Foto de Arthur" class="foto">
+            <p>Olá! Eu sou Arthur de Jesus Nascimento, estudante de desenvolvimento web e apaixonado por tecnologia.</p>
+        </section>
+
+        <!-- Sobre -->
+        <section id="sobre" class="home-section">
+            <h2>Sobre Mim</h2>
+            <p>
+                Meu nome é <strong>Arthur de Jesus Nascimento</strong>, tenho 14 anos e sou estudante do 9º ano do ensino fundamental. Estou focado em aprender desenvolvimento web para atuar futuramente na área de tecnologia.<br>
+                Possuo conhecimentos básicos em inglês, o que considero uma vantagem, pois grande parte dos conteúdos de programação está disponível nesse idioma.
+            </p>
+        </section>
+
+        <!-- Linguagens -->
+        <section id="linguagens" class="home-section">
+            <h2>Linguagens e Tecnologias</h2>
+            <p>
+                Já estudei diversas linguagens e estou sempre buscando aprender mais. Atualmente, tenho conhecimento básico em:<br>
+                <strong>HTML, CSS e JavaScript.</strong>
+            </p>
+        </section>
+
+        <!-- Certificados -->
+        <section id="certificados" class="home-section">
+            <h2>Certificados</h2>
+            <p>
+                Estes são os certificados que obtive até o momento. Alguns cursos realizados online, especialmente pelo YouTube, não disponibilizam certificados oficiais.
+            </p>
+            <ul id="lista-certificados">
+                <li>
+                    <strong>Informática 5.0 - Free</strong> - <span>All Net</span> (<span>2025</span>)
+                    <div class="certificado-thumb">
+                        <img src="./img/Certificado All Net.jpg" alt="Certificado Informática 5.0 - Free" class="img-certificado">
+                    </div>
+                </li>
+            </ul>
+            <!-- Modal para tela cheia -->
+            <div id="modal-certificado" class="modal">
+                <span class="close" id="close-modal">&times;</span>
+                <img class="modal-content" id="img-modal">
+            </div>
+        </section>
+
+        <!-- Contato -->
+        <section id="contato" class="home-section">
+            <h2>Contate-me</h2>
+            <p>
+                <strong>WhatsApp:</strong> Entre em contato pelo número <strong>(11) 9 8265-5890</strong> ou clique <a class="contaclink" target="_blank" href="https://wa.me/5511982655890">aqui</a> para iniciar uma conversa.<br><br>
+                <strong>E-mail:</strong> jesusnascimentoarthur@gmail.com<br>
+                Para enviar um e-mail diretamente pelo Gmail, <a class="contaclink" target="_blank" href="https://mail.google.com/mail/?view=cm&fs=1&to=jesusnascimentoarthur@gmail.com&su=Contato%20do%20Portfólio&body=Olá,%20gostaria%20de%20falar%20com%20você!">clique aqui</a>.
+            </p>
         </section>
     </main>
 

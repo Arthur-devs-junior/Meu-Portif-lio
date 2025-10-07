@@ -20,6 +20,8 @@ body{
     background: var(--cinza-claro);
     color: var(--preto);
     line-height: 1.6;
+    padding-left: 5vw;
+    padding-right: 5vw;
 }
 
 a{
@@ -31,8 +33,12 @@ ul{
     list-style: none;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 /* ====== MENU PRINCIPAL ====== */
-.menu{
+.menu {
     background: var(--azul-escuro);
     color: #fff;
     padding: 1rem 3rem;
@@ -40,6 +46,12 @@ ul{
     justify-content: space-between;
     align-items: center;
     box-shadow: 0 2px 8px rgba(26,35,126,0.08);
+    width: 100vw;           /* Faz o menu ocupar toda a largura da tela */
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;    /* Compensa o padding do body */
 }
 
 .menu .titulo{
@@ -159,4 +171,36 @@ ul{
     object-fit: cover;
     margin-top: 1rem;
     box-shadow: 0 2px 8px rgba(26,35,126,0.08);
+}
+
+/* ====== SEÇÕES PRINCIPAIS ====== */
+.home-section {
+    margin-bottom: 8rem;        /* Espaço grande entre seções */
+    padding-top: 4rem;          /* Espaço extra no topo da seção */
+    scroll-margin-top: 90px;    /* Para âncoras não ficarem atrás do menu */
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(26,35,126,0.07);
+    padding-bottom: 3rem;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    /* "corta" o fundo para separar visualmente cada seção */
+}
+
+/* Adiciona espaçamento entre o menu e o primeiro conteúdo */
+#inicio.home-section {
+    margin-top: 3rem;
+}
+
+.home-section h2 {
+    color: var(--azul-escuro);  /* Títulos em azul escuro */
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.home-section p {
+    color: var(--cinza-escuro); /* Texto padrão */
+    font-size: 1.3rem;
+    margin-bottom: 1.5rem;
 }
